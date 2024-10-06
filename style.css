@@ -1,0 +1,404 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: #f0f4f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #004080;
+    margin-top: 0;
+}
+
+a {
+    color: #004080;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-toggle-icon {
+    display: none;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #004080;
+    color: #ffffff;
+}
+
+#hero .hero-content {
+    flex: 1;
+}
+
+#hero .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background-color: #ffffff;
+    color: #004080;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hero .btn:hover {
+    background-color: #e6e6e6;
+}
+
+#hero .hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+#hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.section:nth-of-type(even) {
+    background-color: #f0f4f8;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.services-list, .academic-content, .media-gallery, .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item, .academic-item, .media-item, .post {
+    flex: 1 1 calc(33.333% - 40px);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.service-item h3, .post h3 {
+    margin-top: 0;
+}
+
+.service-item p, .post p {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #004080;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border-left: 5px solid #004080;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    color: #004080;
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-item p {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.active p {
+    display: block;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+#contact-form .btn {
+    margin-top: 20px;
+    align-self: flex-start;
+    background-color: #004080;
+    color: #ffffff;
+}
+
+#contact-form .btn:hover {
+    background-color: #003060;
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .mit-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+footer nav ul li {
+    margin: 0;
+}
+
+footer nav ul li a {
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+.social-proof {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-proof img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    #menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #004080;
+        margin: 5px 0;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .services-list, .academic-content, .media-gallery, .blog-posts {
+        flex-direction: column;
+    }
+
+    .service-item, .academic-item, .media-item, .post {
+        flex: 1 1 100%;
+    }
+}
